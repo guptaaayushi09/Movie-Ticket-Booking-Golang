@@ -77,6 +77,7 @@ func updateMovie(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	r := mux.NewRouter()
+	fmt.Println("MOvies")
 	movies = append(movies, Movie{ID: "1", Isbn: "1000", Title: "RAVON", Director: &Director{Firstname: "ADIL", Lastname: "SINGH"}})
 	movies = append(movies, Movie{ID: "2", Isbn: "1001", Title: "SUNSET", Director: &Director{Firstname: "DIL", Lastname: "ROY"}})
 	movies = append(movies, Movie{ID: "3", Isbn: "1002", Title: "SUNRISE", Director: &Director{Firstname: "PIYUSH", Lastname: "JEY"}})
